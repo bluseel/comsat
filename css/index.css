@@ -1,0 +1,150 @@
+
+
+body {
+  margin: 0;
+  background: linear-gradient(90deg, rgba(10, 74, 102, 1) 1%, rgba(32, 29, 92, 1) 100%);
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  margin: 10px 0 0 0;
+}
+
+h1{
+  font-family: 'Rubik Iso', cursive;
+  color: white;
+  font-size: 5rem;
+
+  margin: 0;
+  display: block;
+}
+
+#allSections{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+
+  width: 95vw;
+}
+
+
+.sub-section{
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0);
+
+  display: block;
+  color: black;
+  transition: background-color 0.3s ease; 
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+  
+.heading-of-sub-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  border: 1px solid white;
+}
+
+.right-arrow {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent; /* Adjust the size of the arrow */
+  border-bottom: 20px solid transparent; /* Adjust the size of the arrow */
+  border-left: 40px solid #110342; /* Adjust the size and color of the arrow */
+  position: relative;
+
+  transition: transform 0.3s ease;
+}
+
+.heading-of-sub-section:hover {
+  color: white;
+  background: rgba(3, 0, 0, 0.2);
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.heading-of-sub-section .right-arrow{
+  border-left: 40px solid #ffffff; /* Adjust the size and color of the arrow */
+  
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  cursor: auto;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+}
+
+
+
+.sub-section.active .right-arrow {
+  transform: rotate(90deg); /* Rotate arrow when active */
+  
+}
+
+.sub-section.active .content {
+  max-height: 150vh; /* Adjust as needed, should be greater than content's height */
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
+
+
+/* Table css */
+table {
+  width: 98%;
+  border-collapse: collapse;
+  background-color: transparent;
+  font-size: 1rem;
+  color:initial;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #e9e4e4;
+}
+
+th {
+  background-color: rgb(117, 54, 160);
+  color: white;
+  font-weight: bold;
+  
+ 
+}
+
+tr{
+  background-color: white;
+}
+
+
+tr:hover {
+  background-color: rgb(205, 189, 216);
+}
+
+.col-heading{
+  background-color: rgb(69, 22, 100);
+  color: white;
+}
+
+footer{
+  color: rgb(110, 189, 110);
+  font-weight: 900;
+}
