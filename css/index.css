@@ -58,14 +58,15 @@ h1{
 }
 
 .right-arrow {
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent; /* Adjust the size of the arrow */
-  border-bottom: 20px solid transparent; /* Adjust the size of the arrow */
-  border-left: 40px solid #110342; /* Adjust the size and color of the arrow */
-  position: relative;
-
   transition: transform 0.3s ease;
+}
+
+.right-arrow{
+  background-image: url(/rs/black-arrow.svg);
+  width: 35px; 
+  height: 35px; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
 }
 
 .heading-of-sub-section:hover {
@@ -73,13 +74,12 @@ h1{
   background: rgba(3, 0, 0, 0.2);
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.3);
-
 }
 
-.heading-of-sub-section .right-arrow{
-  border-left: 40px solid #ffffff; /* Adjust the size and color of the arrow */
-  
+.heading-of-sub-section:hover .right-arrow{
+  background-image: url(/rs/white-arrow.svg);
 }
+
 
 .content {
   max-height: 0;
@@ -89,7 +89,7 @@ h1{
 
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 10px;
   align-items: center;
 }
 
@@ -147,4 +147,26 @@ tr:hover {
 footer{
   color: rgb(110, 189, 110);
   font-weight: 900;
+}
+
+
+@media screen and (max-width: 400px) {
+  h1{
+    font-size: 3rem;
+  }
+
+  .heading-of-sub-section{
+    font-size: 1.2rem;
+  }
+
+ table{
+  font-size: 10px;
+ } 
+
+ .right-arrow{
+  width: 20px;
+  height: 20px;
+ }
+  
+
 }
