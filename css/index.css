@@ -62,11 +62,8 @@ h1{
 }
 
 .right-arrow{
-  background-image: url(/rs/black-arrow.svg);
   width: 35px; 
-  height: 35px; 
-  background-size: cover; 
-  background-repeat: no-repeat; 
+  height: 35px;  
 }
 
 .heading-of-sub-section:hover {
@@ -76,9 +73,6 @@ h1{
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.heading-of-sub-section:hover .right-arrow{
-  background-image: url(/rs/white-arrow.svg);
-}
 
 
 .content {
