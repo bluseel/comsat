@@ -5,6 +5,10 @@ body {
   background: linear-gradient(90deg, rgba(10, 74, 102, 1) 1%, rgba(32, 29, 92, 1) 100%);
 }
 
+p{
+  margin: 0;
+}
+
 main{
   display: flex;
   flex-direction: column;
@@ -117,6 +121,23 @@ th, td {
   border: 1px solid #e9e4e4;
 }
 
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 110px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 200px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
 th {
   background-color: rgb(117, 54, 160);
   color: white;
@@ -140,7 +161,7 @@ tr:hover {
 }
 
 footer{
-  color: rgb(110, 189, 110);
+  color: rgb(37, 236, 236);
   font-weight: 900;
 }
 
@@ -155,9 +176,25 @@ footer{
     font-size: 1.2rem;
   }
 
- table{
-  font-size: 10px;
- } 
+  table{
+    font-size: 10px;
+  } 
+
+  th:nth-child(1),
+  td:nth-child(1) {
+    width: 70px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+  th:nth-child(3),
+  td:nth-child(3) {
+      width: 120px;
+      white-space: nowrap; 
+      overflow: hidden; 
+      text-overflow: ellipsis; 
+  }
 
  .right-arrow{
   width: 20px;
