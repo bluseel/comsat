@@ -147,7 +147,8 @@ footer{
 
 @media screen and (max-width: 400px) {
   h1{
-    font-size: 3rem;
+    font-size: 2rem;
+    padding: 10px 0 10px 0;
   }
 
   .heading-of-sub-section{
